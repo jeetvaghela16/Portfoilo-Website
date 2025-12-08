@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#56CCF2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2F80ED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Modern Hexagon Background -->
+  <path d="M256 44 L 466 164 V 348 L 256 468 L 46 348 V 164 L 256 44 Z" fill="#0f0f1a" stroke="url(#grad1)" stroke-width="12" stroke-linejoin="round"/>
+
+  <!-- Abstract "JV" formed by geometric lines -->
+  <!-- J Stem -->
+  <path d="M190 150 V 320 Q 190 360 150 360" stroke="white" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top Bar J -->
+  <path d="M160 150 H 220" stroke="white" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- V Shape (connected/abstract) -->
+  <path d="M280 150 L 330 360 L 380 150" stroke="white" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Modern Tech Circuit Dot -->
+  <circle cx="430" cy="164" r="15" fill="#56CCF2"/>
+</svg>

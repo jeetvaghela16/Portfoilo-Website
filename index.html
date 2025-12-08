@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Portfolio | Jeet Vaghela</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
@@ -12,11 +14,18 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- Notification Toast -->
+  <div id="toast">Message Sent Successfully!</div>
 
   <!-- HEADER -->
   <header class="header">
-    <a href="#" class="logo">Jeet Vaghela</a>
+    <a href="#" class="logo">
+      <img src="logo.svg" alt="JVM"> Jeet Vaghela
+    </a>
 
     <nav class="nav-links">
       <ul>
@@ -41,10 +50,14 @@
           <h1>Jeet Vaghela</h1>
           <span>IT Engineer</span>
           <span>Software Developer</span>
+          <p>I am a dedicated IT Engineer and Software Developer with a
+            strong foundation in Android and Web Development. With over 2 years
+            of experience building scalable applications and a growing passion for Artificial Intelligence,
+            I enjoy solving complex problems and creating efficient, user-friendly solutions.</p>
         </div>
 
         <div class="btn-group">
-          <a href="resume.pdf" download="resume.pdf" class="btn">Download CV</a>
+          <a href="assests/resume.pdf" download="resume.pdf" class="btn">Download Resume</a>
         </div>
 
         <div class="socials">
@@ -52,7 +65,7 @@
             <i class="fa-brands fa-github"></i>
           </a>
 
-          <a href="https://www.linkedin.com/feed/" target="_blank">
+          <a href="https://www.linkedin.com/in/jeet-vaghela-6aba9b350/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
@@ -149,8 +162,7 @@
         </p>
 
         <div class="btn-group">
-          <a href="https://github.com/jeetvaghela16/Fitness-Tracker-App"
-             class="btn" target="_blank">
+          <a href="https://github.com/jeetvaghela16/Fitness-Tracker-App" class="btn" target="_blank">
             GitHub Repository
           </a>
         </div>
@@ -164,8 +176,7 @@
         </p>
 
         <div class="btn-group">
-          <a href="https://github.com/jeetvaghela16/Expense-Tracker-App"
-             class="btn" target="_blank">
+          <a href="https://github.com/jeetvaghela16/Expense-Tracker-App" class="btn" target="_blank">
             GitHub Repository
           </a>
         </div>
@@ -181,8 +192,7 @@
         </p>
 
         <div class="btn-group">
-          <a href="https://github.com/Divy-Panchal/EduNize2"
-             class="btn" target="_blank">
+          <a href="https://github.com/Divy-Panchal/EduNize2" class="btn" target="_blank">
             GitHub Repository
           </a>
         </div>
@@ -196,8 +206,7 @@
         </p>
 
         <div class="btn-group">
-          <a href="https://github.com/jeetvaghela16/Ride-Sharing-App"
-             class="btn" target="_blank">
+          <a href="https://github.com/jeetvaghela16/Ride-Sharing-App" class="btn" target="_blank">
             GitHub Repository
           </a>
         </div>
@@ -215,22 +224,26 @@
     <div class="input-box">
       <h2 class="section-title">Contact Me</h2>
 
-      <form
-        action="https://formspree.io/f/xyzabcd"
-        method="POST"
-        id="contact-form"
-      >
-        <div class="input">
-          <input
-            type="email"
-            name="email"
-            placeholder="example@gmail.com"
-            required
-          >
-          <i class="fa-solid fa-envelope"></i>
+      <form action="https://formspree.io/f/mldqwjok" method="POST" id="contact-form">
+
+        <div class="input-group">
+          <div class="input">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <div class="input">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
         </div>
 
-        <button type="submit" class="btn">Send</button>
+        <div class="input">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <i class="fa-solid fa-comment-dots"></i>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
       </form>
 
     </div>
@@ -251,8 +264,8 @@
   <!-- MENU SCRIPT -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const menuIcon   = document.getElementById('menu-icon');
-      const navLinks   = document.querySelector('.nav-links');
+      const menuIcon = document.getElementById('menu-icon');
+      const navLinks = document.querySelector('.nav-links');
       const navAnchors = document.querySelectorAll('.nav-links a');
 
       if (!menuIcon || !navLinks) return;
@@ -268,7 +281,8 @@
       });
     });
   </script>
+  <script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
